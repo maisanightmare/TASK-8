@@ -1,0 +1,50 @@
+body {
+	background-image: url(https://image.freepik.com/free-photo/road-with-buildings-park-background_1112-211.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.car1 {
+	width: 300px;
+	float: left;
+	margin-top: 100px;
+	animation: move	2s infinite linear;
+	animation-direction: alternate;
+}
+@keyframes move {
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(450px);			
+	}
+
+}
+
+.car2 {
+	width: 300px;
+	margin-right: 450px;
+	float: right;
+	margin-top: 400px;	
+	animation: car	2s infinite linear;
+	animation-direction: alternate-reverse;
+}
+
+@keyframes car {
+	0%{
+		transform: translateX(0);
+	}
+	50% {
+		padding-top: 25px;
+		transform: rotate(180deg);
+	}
+	51% {
+		padding-bottom: 25px;
+		transform: rotate3d(45deg);
+	}
+	100%{
+		transform: translateX(450px);			
+	}
+
+}
+
